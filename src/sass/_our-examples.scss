@@ -104,8 +104,11 @@
 
 .examples {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: -15px;
+  @media screen and (max-width: 1279px) {
+  }
 }
 
 .examples-item {
