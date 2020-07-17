@@ -28,7 +28,10 @@
 }
 
 .copy-text {
-  @include font(600, 11px, 1.36, 0.2em);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
   color: #9da4bd;
   @media screen and (min-width: $mobile) and (max-width: 767px) {
     margin-top: 79px;
@@ -37,8 +40,9 @@
 }
 
 .list-social {
-  @extend %list;
-  @include centeredFlex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (min-width: $mobile) and (max-width: 767px) {
     margin-top: 44px;
@@ -46,15 +50,19 @@
   }
 
   .social-item {
-    @include centeredFlex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:nth-child(1) {
       margin-right: 40px;
     }
 
     .social-link {
-      @extend %link-decoration;
-      @include font(600, 11px, 1.36, 0.2em);
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+      letter-spacing: 0.2em;
       color: #303030;
     }
   }

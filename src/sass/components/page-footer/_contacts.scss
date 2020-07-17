@@ -1,4 +1,4 @@
-.footer-contacts {
+.contacts {
   @media screen and (min-width: $mobile) and (max-width: 767px) {
     padding-left: 31px;
     padding-right: 31px;
@@ -6,7 +6,6 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
-    padding-left: 39px;
     height: 449px;
   }
 
@@ -113,26 +112,24 @@
 .contact-items {
   @media screen and (min-width: 767px) and (max-width: 1179px) {
     display: flex;
+    align-items: center;
   }
-}
-
-.contact-list,
-.business-hours {
-  @extend %list;
 }
 
 .footer-link {
   display: flex;
   align-items: center;
-  @include font(400, 18px, 1.6, 0.02em);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
 
   &:not(:last-child) {
     margin-bottom: 20px;
   }
 
   .item {
-    @extend %link-decoration;
-    color: $contacts;
+    color: $text-on-black;
     margin-left: 16px;
 
     &.email {
@@ -159,8 +156,11 @@
 .time {
   margin-top: 0;
   margin-bottom: 20px;
-  @include font(600, 11px, 1.36, 0.1em);
-  color: $white-text-color;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: $primary-white;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -170,7 +170,10 @@
   }
 
   &-item {
-    @include font(400, 18px, 1.6, 0.02em);
-    color: $contacts;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: $text-on-black;
   }
 }
