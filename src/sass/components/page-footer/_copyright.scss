@@ -1,14 +1,13 @@
 .copyright {
   background-color: #f7f7f7;
   height: 127px;
-
+  height: 138px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-top: 403px;
   @media screen and (min-width: $mobile) and (max-width: 767px) {
-    height: 138px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 31px;
-    padding-right: 31px;
-    margin-top: 403px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -17,6 +16,7 @@
     align-items: center;
     padding-left: 55px;
     padding-right: 55px;
+    margin-top: 0;
   }
 
   @media screen and (min-width: $desktop) {
