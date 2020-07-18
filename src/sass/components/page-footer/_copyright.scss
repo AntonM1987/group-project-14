@@ -58,7 +58,16 @@
     &:nth-child(1) {
       margin-right: 40px;
     }
-
+    .line::before {
+      display: block;
+      position: relative;
+      left: -100px;
+      bottom: -8px;
+      content: '';
+      width: 60px;
+      height: 1px;
+      background-color: $primary-black;
+    }
     .social-link {
       font-weight: 600;
       font-size: 11px;
