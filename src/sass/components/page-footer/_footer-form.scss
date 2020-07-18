@@ -1,5 +1,9 @@
 // Form
 .footer-form {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 168px;
+  }
+
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     max-width: 738px;
   }
@@ -146,6 +150,13 @@
 
   @media screen and (min-width: $mobile) and (max-width: 767px) {
     padding-bottom: 84px;
+  }
+}
+
+.footer-button {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
   }
 }
 
