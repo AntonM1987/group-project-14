@@ -12,6 +12,7 @@ footer {
   }
 
   @media screen and (min-width: $desktop) {
+    position: relative;
     display: flex;
     height: 644px;
   }
