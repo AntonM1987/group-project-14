@@ -189,10 +189,21 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"/Users/evgenij/Documents/GitHub/group-project-14/src/images/bg-mobile.jpg":[["bg-mobile.0997fae8.jpg","images/bg-mobile.jpg"],"images/bg-mobile.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/bg-mobile@2x.jpg":[["bg-mobile@2x.b0f6f279.jpg","images/bg-mobile@2x.jpg"],"images/bg-mobile@2x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/bg-mobile@3x.jpg":[["bg-mobile@3x.748b0417.jpg","images/bg-mobile@3x.jpg"],"images/bg-mobile@3x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/bg-tablet.jpg":[["bg-tablet.bd48e50d.jpg","images/bg-tablet.jpg"],"images/bg-tablet.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/bg-tablet@2x.jpg":[["bg-tablet@2x.09ce3465.jpg","images/bg-tablet@2x.jpg"],"images/bg-tablet@2x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/bg-tablet@3x.jpg":[["bg-tablet@3x.e3907f83.jpg","images/bg-tablet@3x.jpg"],"images/bg-tablet@3x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/bg-desktop.jpg":[["bg-desktop.a1a3b37d.jpg","images/bg-desktop.jpg"],"images/bg-desktop.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/bg-desktop@2x.jpg":[["bg-desktop@2x.130eda94.jpg","images/bg-desktop@2x.jpg"],"images/bg-desktop@2x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/bg-desktop@3x.jpg":[["bg-desktop@3x.1910ee99.jpg","images/bg-desktop@3x.jpg"],"images/bg-desktop@3x.jpg"],"./../images/prices/prices_mobile.jpg":[["prices_mobile.07f9a97f.jpg","images/prices/prices_mobile.jpg"],"images/prices/prices_mobile.jpg"],"./../images/prices/prices_mobile@2x.jpg":[["prices_mobile@2x.9c52da91.jpg","images/prices/prices_mobile@2x.jpg"],"images/prices/prices_mobile@2x.jpg"],"./../images/prices/prices_mobile@3x.jpg":[["prices_mobile@3x.f061dab8.jpg","images/prices/prices_mobile@3x.jpg"],"images/prices/prices_mobile@3x.jpg"],"./../images/prices/prices_tablet.jpg":[["prices_tablet.8473f2a5.jpg","images/prices/prices_tablet.jpg"],"images/prices/prices_tablet.jpg"],"./../images/prices/prices_tablet@2x.jpg":[["prices_tablet@2x.b83937f2.jpg","images/prices/prices_tablet@2x.jpg"],"images/prices/prices_tablet@2x.jpg"],"./../images/prices/prices_tablet@3x.jpg":[["prices_tablet@3x.2de8d3a3.jpg","images/prices/prices_tablet@3x.jpg"],"images/prices/prices_tablet@3x.jpg"],"./../images/prices/prices_desktop.jpg":[["prices_desktop.31c9d5fb.jpg","images/prices/prices_desktop.jpg"],"images/prices/prices_desktop.jpg"],"./../images/prices/prices_desktop@2x.jpg":[["prices_desktop@2x.3270cace.jpg","images/prices/prices_desktop@2x.jpg"],"images/prices/prices_desktop@2x.jpg"],"./../images/prices/prices_desktop@3x.jpg":[["prices_desktop@3x.3e11c820.jpg","images/prices/prices_desktop@3x.jpg"],"images/prices/prices_desktop@3x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/header/3-mobile.jpg":[["3-mobile.ca63d6bc.jpg","images/header/3-mobile.jpg"],"images/header/3-mobile.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/header/3-mobile@2x.jpg":[["3-mobile@2x.c6b01530.jpg","images/header/3-mobile@2x.jpg"],"images/header/3-mobile@2x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/header/3-mobile@3x.jpg":[["3-mobile@3x.47c8c53d.jpg","images/header/3-mobile@3x.jpg"],"images/header/3-mobile@3x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/header/3-tablet.jpg":[["3-tablet.f5ccec21.jpg","images/header/3-tablet.jpg"],"images/header/3-tablet.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/header/3-tablet@2x.jpg":[["3-tablet@2x.63f5eee1.jpg","images/header/3-tablet@2x.jpg"],"images/header/3-tablet@2x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/header/3-tablet@3x.jpg":[["3-tablet@3x.83262d79.jpg","images/header/3-tablet@3x.jpg"],"images/header/3-tablet@3x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/header/3-desktop.jpg":[["3-desktop.9de02892.jpg","images/header/3-desktop.jpg"],"images/header/3-desktop.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/header/3-desktop@2x.jpg":[["3-desktop@2x.005d1130.jpg","images/header/3-desktop@2x.jpg"],"images/header/3-desktop@2x.jpg"],"/Users/evgenij/Documents/GitHub/group-project-14/src/images/header/3-desktop@3x.jpg":[["3-desktop@3x.1b6ab0df.jpg","images/header/3-desktop@3x.jpg"],"images/header/3-desktop@3x.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
+
+(function () {
+  var menuBtnRef = document.querySelector('[data-menu-button]');
+  var mobileMenuRef = document.querySelector('[data-menu]');
+  menuBtnRef.addEventListener('click', function () {
+    var expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+    menuBtnRef.classList.toggle('is-open');
+    menuBtnRef.setAttribute('aria-expanded', !expanded);
+    mobileMenuRef.classList.toggle('is-open');
+  });
+})();
 },{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -221,7 +232,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49337" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58959" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
