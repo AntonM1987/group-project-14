@@ -125,6 +125,9 @@
     display: flex;
     align-items: center;
   }
+  & > address {
+    font-style: normal;
+  }
 }
 
 .footer-link {
