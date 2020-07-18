@@ -94,9 +94,9 @@
   }
 }
 .footer-contacts {
-  @media screen and (min-width: $mobile) and (max-width: 767px) {
-    padding-left: 31px;
-    padding-right: 31px;
+  @media screen and (max-width: 767px) {
+    // padding-left: 31px;
+    // padding-right: 31px;
     // height: 496px;
     padding-top: 84px;
   }
@@ -110,6 +110,13 @@
     width: 625px;
     padding-left: 100px;
     padding-top: 130px;
+  }
+
+  & .title {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
