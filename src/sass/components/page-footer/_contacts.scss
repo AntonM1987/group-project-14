@@ -1,4 +1,4 @@
-.background {
+.footer-contacts {
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -7,7 +7,7 @@
       rgba(25, 28, 38, 0.9),
       rgba(25, 28, 38, 0.9)
     ),
-    url(../images/bg-mobile.jpg);
+    url(/images/bg-mobile.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -16,7 +16,7 @@
         rgba(25, 28, 38, 0.9),
         rgba(25, 28, 38, 0.9)
       ),
-      url(../images/bg-mobile@2x.jpg);
+      url(/images/bg-mobile@2x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 3),
@@ -26,7 +26,7 @@
         rgba(25, 28, 38, 0.9),
         rgba(25, 28, 38, 0.9)
       ),
-      url(../images/bg-mobile@3x.jpg);
+      url(/images/bg-mobile@3x.jpg);
   }
 
   @media screen and (min-width: $mobile) and (max-width: 1279px) {
@@ -39,7 +39,7 @@
         rgba(25, 28, 38, 0.9),
         rgba(25, 28, 38, 0.9)
       ),
-      url(../images/bg-tablet.jpg);
+      url(/images/bg-tablet.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -48,7 +48,7 @@
           rgba(25, 28, 38, 0.9),
           rgba(25, 28, 38, 0.9)
         ),
-        url(../images/bg-tablet@2x.jpg);
+        url(/images/bg-tablet@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
@@ -58,7 +58,7 @@
           rgba(25, 28, 38, 0.9),
           rgba(25, 28, 38, 0.9)
         ),
-        url(../images/bg-tablet@3x.jpg);
+        url(/images/bg-tablet@3x.jpg);
     }
   }
 
@@ -70,7 +70,7 @@
         rgba(25, 28, 38, 0.9),
         rgba(25, 28, 38, 0.9)
       ),
-      url(../images/bg-desktop.jpg);
+      url(/images/bg-desktop.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -79,7 +79,7 @@
           rgba(25, 28, 38, 0.9),
           rgba(25, 28, 38, 0.9)
         ),
-        url(../images/bg-desktop@2x.jpg);
+        url(/images/bg-desktop@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
@@ -89,7 +89,7 @@
           rgba(25, 28, 38, 0.9),
           rgba(25, 28, 38, 0.9)
         ),
-        url(../images/bg-desktop@3x.jpg);
+        url(/images/bg-desktop@3x.jpg);
     }
   }
 }
