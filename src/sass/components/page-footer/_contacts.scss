@@ -166,6 +166,7 @@
 
 .time {
   margin-top: 0;
+  margin-left: 22px;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -176,8 +177,15 @@
   display: flex;
   align-items: center;
 
-  .time-img {
-    margin-right: 16px;
+  &::before {
+    display: block;
+    position: relative;
+    left: -20px;
+    bottom: 0px;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: $subscription;
   }
 
   &-item {
