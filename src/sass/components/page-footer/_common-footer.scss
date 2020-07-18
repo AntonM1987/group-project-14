@@ -1,0 +1,19 @@
+footer {
+  background: #191c26;
+}
+
+.page-footer {
+  @media screen and (min-width: $mobile) {
+    // height: 1053px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    height: 970px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    display: flex;
+    height: 644px;
+  }
+}

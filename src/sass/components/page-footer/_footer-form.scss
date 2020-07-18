@@ -1,0 +1,180 @@
+// Form
+.footer-form {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    max-width: 738px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 655px;
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: $primary-white;
+  font-family: Raleway, sans-serif;
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.form {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form-field {
+  @media screen and (min-width: $tablet) {
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.form-input {
+  padding-bottom: 9px;
+  margin-bottom: 44px;
+  background-color: transparent;
+  color: $subscription;
+  border: transparent;
+  border-bottom: 1px solid $subscription;
+  cursor: pointer;
+  transition: all 250ms $cubic;
+
+  &::placeholder {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    color: $subscription;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $primary-white;
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: $primary-white;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+}
+
+.form-textarea {
+  padding-bottom: 60px;
+  margin-bottom: 44px;
+  height: 76px;
+  background-color: transparent;
+  color: $subscription;
+  border: transparent;
+  border-bottom: 1px solid $subscription;
+  overflow: hidden;
+  resize: none;
+  cursor: pointer;
+
+  transition: all 250ms $cubic;
+
+  &::placeholder {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    color: $subscription;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $primary-white;
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: $primary-white;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 690px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 560px;
+  }
+}
+
+.footer-button {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1179px) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    // padding-bottom: 84px;
+  }
+}
+
+.footer-button {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 160px;
+  background: transparent;
+  border-radius: 25px;
+  border: 1px solid $primary-orange;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.36;
+  letter-spacing: 0.09em;
+  color: #303030;
+  color: $primary-white;
+  text-transform: uppercase;
+  cursor: pointer;
+}

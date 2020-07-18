@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Barbersop</title>
+    <title>Barbershop</title>
   </head>
   <body>
     <a class="logo" href="./index.html">
@@ -16,9 +16,15 @@
       </svg>
     </a>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-
-    <include src="./partials/page-header.html"></include>
-    <include src="./partials/features.html"></include>
+    <main>
+      <include src="./partials/page-header.html"></include>
+      <include src="./partials/about-us.html"></include>
+      <include src="./partials/section-prices.html"></include>
+      <include src="./partials/features.html"></include>
+      <include src="./partials/team-section.html"></include>
+      <include src="./partials/our-examples.html"></include>
+      <include src="./partials/footer.html"></include>
+    </main>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>

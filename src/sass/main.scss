@@ -3,12 +3,27 @@
  * Все паршалы подключаются сюда.
  */
 
+// Стили для файла с примером HTML-фрагмента
+
 @import '../base/normalize';
 @import '../base/base';
 @import '../base/variables';
+@import './utils/breakpoints';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/variables';
+@import './components/page-footer/footer-form';
+@import './components/page-footer/common-footer';
+@import './components/page-footer/contacts';
+@import './components/page-footer/copyright';
 @import './page-header';
 @import './mobile-menu';
 @import './header-desktop/header-desktop';
 @import './header-desktop/hero';
 @import './header-desktop/sidebar';
+@import './team-section';
+@import './section-prices';
 @import './features';
+@import './header-desktop/header-bcg';
+@import './about-us';
+@import './our-examples';
